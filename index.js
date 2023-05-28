@@ -1,11 +1,5 @@
-import path, { basename, relative, resolve } from 'node:path';
+import path, { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readFileSync, writeFileSync } from 'node:fs';
-
-import { rollup } from 'rollup';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import json from '@rollup/plugin-json';
 import glob from 'tiny-glob';
 import { readFile, rename, unlink, writeFile } from 'node:fs/promises';
 
@@ -186,7 +180,7 @@ foreach($res as $k=>$v){
                     }
                     await writeFile(htmlFilePath,fileContent,"utf8");
                     await writeFile(`${tmpDir}/prerendered${navPath}/__data.php`,prepareDataFile(dependencies,navPath),"utf8");
-                    // await unlink(`${tmpDir}/prerendered${navPath}/__data.json`);
+                    await unlink(`${tmpDir}/prerendered${navPath}/__data.json`);
                     if(ssr){
                         await rename(htmlFilePath,`${tmpDir}/prerendered/${filePath.file.replace(".html",".php")}`);
                     }
