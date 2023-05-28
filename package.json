@@ -1,0 +1,16 @@
+{
+  "name": "sveltekit-php",
+  "version": "1.0.0",
+  "description": "A quickly written adapter that allows integration between SvelteKit and PHP.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["svelte","kit","sveltekit","adapter"],
+  "author": "Alex Waldboth",
+  "license": "MIT",
+  "devDependencies": {
+    "tiny-glob": "^0.2.9"
+  }
+}
