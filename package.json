@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["svelte","kit","sveltekit","adapter"],
-  "author": "Alex Waldboth",
+  "author": "Flexlex",
   "license": "MIT",
   "devDependencies": {
     "tiny-glob": "^0.2.9"
