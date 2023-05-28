@@ -69,12 +69,12 @@ function load($param){
 - First SSR render with correct data
 - Live preview (Vite)
 
-*Not planing to implement it*
+*Not planing to implement*
 - Reset layout
 
 
 ## What about those <sup>**</sup> ? 😒
-Preloads work fine, but since the pages are prerendered the default data (in +page.server.js if you choose to use them) can be seen for a split second.  
+Preloads work fine, but since the pages are prerendered the default data (in +page.server.js if you choose to use it) can be seen for a split second.  
 The server generated data (by PHP) is already inlined into the document to be rendered as fast as possible.  
   
 Maybe **you** have the solution to this problem.
