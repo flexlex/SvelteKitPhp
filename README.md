@@ -20,13 +20,13 @@ pnpm add -D sveltekit-php
 ## Setup
 
 ### Adapter
-In your svelte.config.js import the addapter
+In your svelte.config.js import the adapter
 ```js
 import adapter from "sveltekit-php";
 ```
 
 ### Root Layout
-In order to corrctly use the PHP-Adapter, should put this code into your root +layout.server.js.
+In order to corrctly use the PHP-Adapter, you should put this code into your root +layout.server.js.
 ```js
 export const prerender = true;
 export const ssr = true;
@@ -51,7 +51,7 @@ Write your load function.
 <?php
 function load($param){
     $routeid = $param["routeid"];
-    $parentdata = $param["paarentdata"];
+    $parentdata = $param["parentdata"];
 
     return [
         "message" => "Hello by PHP Server"
